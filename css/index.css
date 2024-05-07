@@ -26,18 +26,40 @@
 @font-face {
   font-family: 'DMSerif';
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   src:  url('/police/DMSerifDisplay-Regular.ttf') format('truetype');
 }
 
 
+.btnLink {
+  font-family: Calibri,sans-serif;
+  background-color: #cccccc;
+  display: inline-block;
+  padding: 10px 20px; /* Ajustez les valeurs selon vos besoins */
+  border: 1px solid #cccccc;
+  border-radius: 5px; /* Ajustez selon le degré d'arrondi souhaité */
+  text-decoration: none; /* Supprimer le soulignement du lien */
+  color: #000000; /* Couleur du texte */
+}
 
+.btnLink:hover {
+  background-color: #aaaaaa; /* Couleur au survol */
+}
+
+#textPremierePartie{
+  margin-top: 5vw;
+  background-position: center;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  flex-direction: column; /* Arrange les éléments en colonne */
+}
 
 
 #premierPartie {
   width: 100%;
   height: 100%;
-  background-image: url("/img/background-Kotel.jpg");
+  background-image:linear-gradient( rgb(26, 26, 26), rgba(21, 21, 21, 0.5)), url("/img/seferTorah.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -72,16 +94,16 @@ body{
 }
 
 .annonce{
-  font-family: "Brush Script MT", sans-serif;
-  color: #8db6bb;
-  font-size: 8vw;
+  font-family: "DMSerif", sans-serif;
+  color: #e5e5e5;
+  font-size: 4vw;
   text-align: center;
   max-width: 85%;
 }
-.barMitzvah{
-  color: #eeb646;
-  font-size: 12vw;
-  font-family: "Berlin Sans FB" , sans-serif;
+.txtImportant{
+  color: #d0d0d0;
+  font-size: 18vw;
+  font-family: "Great Vibes" , sans-serif;
 }
 
 #saveTheDate {
@@ -98,6 +120,7 @@ body{
 #decompte {
  /* display: flex; /* Aligne les éléments en ligne */
   justify-content: center; /* Centre horizontalement */
+  margin-bottom: 5vw;
 }
 
 .separation{
