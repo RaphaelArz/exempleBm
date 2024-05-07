@@ -1,4 +1,7 @@
+// Function to hide the overlay
+// Ajoutez la classe no-scroll par défaut
 
+document.body.classList.add("no-scroll")
 
 function hideOverlay() {
   var overlay = document.getElementById('overlay');
