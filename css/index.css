@@ -55,6 +55,57 @@
   flex-direction: column; /* Arrange les éléments en colonne */
 }
 
+.txtSecondePartie{
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  flex-direction: column; /* Arrange les éléments en colonne */
+  font-family: DMSerif,sans-serif;
+  color: #171717;
+}
+.txtSecondePartieImportant{
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  flex-direction: column; /* Arrange les éléments en colonne */
+  font-family: "Great Vibes",sans-serif;
+  color: #171717;
+  font-size: 15vw;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+
+.image{
+border-radius: 1.5vw;
+}
+.col {
+  flex: 1;
+  padding: 2px; /* Ajoutez de l'espace entre les colonnes */
+}
+
+img {
+ width: 48vw;
+  height: 48vw;
+
+}
+
+
+
 
 #premierPartie {
   width: 100%;
@@ -96,7 +147,7 @@ body{
 .annonce{
   font-family: "DMSerif", sans-serif;
   color: #e5e5e5;
-  font-size: 4vw;
+  font-size: 6vw;
   text-align: center;
   max-width: 85%;
 }
@@ -174,17 +225,30 @@ body{
 #secondePartie {
   width: 100%;
   height: 100%;
-  background-image: url("/img/background-Kotel.jpg");
+  background-color: #fffaf4;
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center; /* Centre horizontalement */
   align-items: center; /* Centre verticalement */
   flex-direction: column; /* Arrange les éléments en colonne */
-  box-shadow: inset 0.1vw 0.1vw 0.1vw 0.1vw #eeb646;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+
 
 
 }
+
+.contenaireImage{
+  background-color: #92989b;
+  background-image: linear-gradient(160deg, #dedddd 0%, #afaeae 100%);
+  padding: 5vw;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  border-radius: 1vw;
+
+}
+
 .lien {
   text-align: center; /* Centrer le bouton horizontalement */
 }
