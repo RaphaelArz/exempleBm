@@ -10,6 +10,12 @@
   font-weight: normal;
   src:  url('/police/BRUSHSCI.TTF') format('truetype');
 }
+@font-face {
+  font-family: 'Great Vibes';
+  font-style: normal;
+  font-weight: normal;
+  src:  url('/police/GreatVibes-Regular.ttf') format('truetype');
+}
 
 @font-face {
   font-family: 'torah sofer';
@@ -17,6 +23,13 @@
   font-weight: normal;
   src:  url('/police/TORAH.TTF') format('truetype');
 }
+@font-face {
+  font-family: 'DMSerif';
+  font-style: normal;
+  font-weight: normal;
+  src:  url('/police/DMSerifDisplay-Regular.ttf') format('truetype');
+}
+
 
 
 
@@ -73,8 +86,8 @@ body{
 
 #saveTheDate {
   padding-top: 5vw;
-  background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  background-color: #92989b;
+  background-image: linear-gradient(160deg, #dedddd 0%, #afaeae 100%);
   display: flex;
   flex-direction: column; /* Arrange les éléments en colonne */
   justify-content: center; /* Centre verticalement */
@@ -92,45 +105,48 @@ body{
 }
 
 .countdown-item {
-  margin: 8vw 8vw 0vw 8vw; /* Espacement entre les éléments du compte à rebours */
-  width: 15vw; /* Largeur relative en fonction de la largeur de la vue */
+  margin: 0vw 15vw 0 15vw; /* Espacement entre les éléments du compte à rebours */
+ /* width: 15vw; /* Largeur relative en fonction de la largeur de la vue */
   height: 15vw; /* Hauteur relative en fonction de la largeur de la vue */
-  color: #000000; /* Couleur de texte blanc */
+  color: #171717; /* Couleur de texte blanc */
   font-size: 15vw; /* Taille de la police relative en fonction de la largeur de la vue */
   text-align: center; /* Centrage du contenu */
   line-height: 25vw; /* Alignement vertical */
   border-radius: 10px; /* Bordure arrondie */
-  font-family: "Brush Script MT", sans-serif;
+  font-family: "DMSerif", sans-serif;
 
 }
 
 
 #textSaveTheDate {
-  font-family:  "Brush Script MT", sans-serif;
-  color: #000000;
+  font-family:  "Great Vibes", sans-serif;
+  color: #171717;
   font-size: 10vw;
   margin-bottom: 2vw; /* Espacement par rapport au compte à rebours */
 }
 
 .element{
-  margin-right: 2vw; /* Espacement entre les éléments du compte à rebours */
   margin-top: 2vw; /* Espacement entre les éléments du compte à rebours */
-
   width: 15vw; /* Largeur relative en fonction de la largeur de la vue */
   height: 15vw; /* Hauteur relative en fonction de la largeur de la vue */
-  color: #515a77; /* Couleur de texte blanc */
-  font-size: 5vw; /* Taille de la police relative en fonction de la largeur de la vue */
+  color: #414141; /* Couleur de texte blanc */
+  font-size: 3.2vw; /* Taille de la police relative en fonction de la largeur de la vue */
   text-align: center; /* Centrage du contenu */
   line-height: 15vw; /* Alignement vertical */
   border-radius: 10px; /* Bordure arrondie */
-  font-family: "Brush Script MT", sans-serif;
+  font-family: "DMSerif";
+
 
 }
 .temps{
   display: flex; /* Aligne les éléments en colonne */
   flex-direction: column; /* Arrange les éléments en colonne */
   justify-content: center; /* Centre verticalement */
-  align-items: center; /* Centre horizontalement */}
+  align-items: center; /* Centre horizontalement */
+  text-align: center;
+  width: 40vw;
+
+}
 
 #secondePartie {
   width: 100%;
