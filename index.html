@@ -31,6 +31,20 @@
 
 <body>
 
+<div id="overlay">
+    <h1 class="txtImportant" style="font-size: 8vw">Bar Mitzvah </h1>
+    <a class="txtImportant" style="font-size: 10vw">Raphaël  Arzoin</a>
+    <a href="#premierPartie" class="btnLink" onclick="hideOverlay(); playMusic()"style="font-family: DMSerif"> <b>→</b> Voir l'invitation</a>
+</div>
+
+
+<nav id="navbar">
+    <ul>
+        <li><a href="#premierPartie">Acceuil</a></li>
+        <li><img src="/img/LOGO.png" alt="Logo" style="width: 60px; height: auto;"></li>
+        <li><a href="#reponse">Réponse</a></li>
+    </ul>
+</nav>
 
 <div>
 
@@ -89,7 +103,7 @@
         <br>
         <div class="txtSecondePartie">
 
-            <a class="txtImportant" style="font-size: 12vw ;color: #afafaf">Mise des Tefilines</a>
+            <a class="txtImportant" style="font-size: 22vw ;color: #afafaf">Tefilines</a>
             <a class="txtSecondePartie">La mise des téfilines aura lieu le </a>
             <a class="txtSecondePartie">Jeudi 23 mars 2025</a>
             <a class="txtSecondePartie">en la synagogue </a>
@@ -109,7 +123,7 @@
         </div>
     </div>
 
-    <div id="secondePartie">
+    <div id="troisiemePartie">
 
         <div class="contenaireImage">
             <img class="image" style="object-fit: cover" src="/img/seferTorah.jpg">
@@ -118,7 +132,7 @@
         <br>
 
         <div class="txtSecondePartie">
-            <a class="txtImportant" style="font-size: 12vw ;color: #afafaf" >Chabbat</a>
+            <a class="txtImportant" style="font-size: 22vw ;color: #afafaf" >Chabbat</a>
             <a class="txtSecondePartie">Raphaël lira la parachat</a>
             <a class="txtImportant" style="font-size: 12vw ;color: #afafaf" >Vayakhel-Pékoudé</a>
 
@@ -139,7 +153,7 @@
     </div>
 
 
-    <div id="secondePartie">
+    <div id="quatriemePartie">
 
         <div class="contenaireImage">
             <img class="image" style="object-fit: cover" src="/img/soiree.jpg">
@@ -147,7 +161,7 @@
         <br>
 
         <div class="txtSecondePartie">
-            <a class="txtImportant" style="font-size: 12vw ;color: #afafaf" >Récéption</a>
+            <a class="txtImportant" style="font-size: 22vw ;color: #afafaf" >Récéption</a>
             <a class="txtSecondePartie">Daniel et Séverine</a>
             <a class="txtSecondePartie">seraient heureux de vous recevoir le</a>
 
@@ -168,7 +182,7 @@
     </div>
 
     <div id="reponse">
-        <a class="txtImportant">Réponse</a>
+        <a class="txtImportant" style="font-size:22vw ">Réponse</a>
         <a class="txtSecondePartie">Merci de confirmer votre présence</a>
         <br>
 
@@ -231,6 +245,7 @@
 
 
 <script defer src="/js/coche.js"></script>
+<script defer src="/js/navbar.js"></script>
 
 <script defer src="/js/countDown.js"></script>
 <script defer src="/js/script.js"></script>

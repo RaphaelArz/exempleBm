@@ -29,6 +29,31 @@
   font-weight: bold;
   src:  url('/police/DMSerifDisplay-Regular.ttf') format('truetype');
 }
+/* Styles for the overlay */
+#overlay {
+  background-image:linear-gradient( rgb(26, 26, 26), rgba(21, 21, 21, 0.5)), url("/img/seferTorah.jpg");
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fffaf4; /* Semi-transparent black background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1; /* Initially visible */
+  transition: opacity 0.5s; /* Smooth transition for opacity change */
+}
+
+#overlay.hidden {
+  opacity: 0; /* Make overlay invisible */
+  pointer-events: none; /* Disable pointer events on the hidden overlay */
+}
+
+
 
 body{
   margin: 0 0 0 0;
@@ -238,6 +263,44 @@ img {
 
 
 }
+#troisiemePartie {
+  width: 100%;
+  height: 100%;
+  background-color: #fffaf4;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  flex-direction: column; /* Arrange les éléments en colonne */
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+
+
+
+}
+
+
+.no-scroll {
+  overflow: hidden;
+}
+
+#quatriemePartie {
+  width: 100%;
+  height: 100%;
+  background-color: #fffaf4;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  flex-direction: column; /* Arrange les éléments en colonne */
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+
+
+
+}
 
 .contenaireImage{
   background-color: #92989b;
@@ -256,7 +319,7 @@ img {
 .lien a {
   display: inline-block; /* Afficher en ligne pour pouvoir définir la largeur */
   padding: 10px 20px; /* Espacement à l'intérieur du bouton */
-  background-color: #dab984; /* Couleur de fond beige foncé */
+  background-color: #c2c2c2; /* Couleur de fond beige foncé */
   color: white; /* Couleur du texte en blanc */
   text-decoration: none; /* Supprimer le soulignement du lien */
   border-radius: 10px; /* Bords arrondis */
@@ -266,19 +329,7 @@ img {
 .lien a:hover {
   background-color: #8f8f8f; /* Changement de couleur de fond au survol */
 }
-#troisiemePartie {
-  width: 100%;
-  height: 100%;
-  background-image: url("/img/background-Kotel.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center; /* Centre horizontalement */
-  align-items: center; /* Centre verticalement */
-  flex-direction: column; /* Arrange les éléments en colonne */
-  box-shadow: inset 0.1vw 0.1vw 0.1vw 0.1vw #eeb646;
 
-}
 #partieChabbat {
   width: 100%;
   height: 100%;
@@ -377,6 +428,42 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #c4c4c4;
+}
+
+/* Styles pour la barre de navigation */
+#navbar {
+  background-color: #000000;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 80px; /* Ajustez la hauteur selon vos besoins */
+}
+
+#navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  height: 100%; /* Assure que la liste occupe toute la hauteur de la barre de navigation */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+#navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  padding: 10px;
 }
 
 
