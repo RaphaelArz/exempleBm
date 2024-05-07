@@ -440,6 +440,7 @@ input[type="submit"]:hover {
   left: 0;
   z-index: 1000;
   height: 80px; /* Ajustez la hauteur selon vos besoins */
+  display: none; /* Masquer la barre de navigation par défaut */
 }
 
 #navbar ul {
@@ -465,5 +466,4 @@ input[type="submit"]:hover {
   transition: color 0.3s ease;
   padding: 10px;
 }
-
 
