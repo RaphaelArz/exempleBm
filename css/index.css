@@ -92,6 +92,7 @@ body{
   flex-direction: column; /* Arrange les éléments en colonne */
   font-family: DMSerif,sans-serif;
   color: #171717;
+  font-size: 4.5vw;
 }
 .txtSecondePartieImportant{
   display: flex;
@@ -302,14 +303,23 @@ img {
 
 }
 
-.contenaireImage{
+.contenaireImage {
   background-color: #92989b;
   background-image: linear-gradient(160deg, #dedddd 0%, #afaeae 100%);
-  padding: 5vw;
+  padding: 0vw; /* Ajustez selon vos besoins */
   display: flex;
   justify-content: center; /* Centre horizontalement */
-  border-radius: 1vw;
+  align-items: center; /* Centre verticalement */
+  border-radius: 0.9vw; /* Ajustez selon vos besoins */
+  width: 62vw; /* Ajustez selon vos besoins */
+  height: 62vw; /* Ajustez selon vos besoins */
+}
 
+.contenaireImage .image {
+  border-radius: 0.7vw; /* Ajustez selon vos besoins */
+  width: 87%; /* Empêche l'image de déborder */
+  height: 87%; /* Empêche l'image de déborder */
+  object-fit: contain; /* Ajustez le comportement de l'image */
 }
 
 .lien {
